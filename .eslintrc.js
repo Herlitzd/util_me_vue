@@ -6,6 +6,9 @@ module.exports = {
   parserOptions: {
     sourceType: 'module'
   },
+  extensions:[
+    '.ts','.js','.vue'
+  ],
   env: {
     browser: true,
   },
@@ -17,6 +20,8 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    "semi": [2, "always"],
+    "space-before-function-paren": "off",
     // allow async-await
     'generator-star-spacing': 'off',
     // allow debugger during development
