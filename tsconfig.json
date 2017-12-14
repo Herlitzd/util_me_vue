@@ -4,7 +4,8 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "strict": true,
+    "strict": false,
+    "noImplicitAny": false,
     "lib": [
       "dom",
       "es5",

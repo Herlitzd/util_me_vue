@@ -1,11 +1,8 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{apple}}</h1>
     <router-view/>
   </div>
 </template>
-
 <script lang="ts">
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
@@ -16,8 +13,9 @@ export default class App extends Vue {
   apple = 'Something cool';
 }
 </script>
+<style lang="scss">
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
