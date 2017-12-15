@@ -31,6 +31,14 @@ const webpackConfig = merge(baseWebpackConfig, {
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      '$': 'jquery',
+      'jQuery': 'jquery',
+      'jquery': 'jquery',
+      'window.jQuery': 'jquery',
+      'Popper': ['popper.js', 'default'],
+      'bootstrap': 'bootstrap'
+    }),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
     new webpack.DefinePlugin({
       'process.env': env
